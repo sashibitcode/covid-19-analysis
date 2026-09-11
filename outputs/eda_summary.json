@@ -1,0 +1,19 @@
+{
+  "date_range": [
+    "2020-01-22",
+    "2020-07-27"
+  ],
+  "latest_date_totals": {
+    "Confirmed": 16480485,
+    "Deaths": 654036,
+    "Recovered": 9468087,
+    "Active Cases": 6358362
+  },
+  "peak_new_cases": {
+    "Date": "2020-07-23",
+    "New cases": 282756
+  },
+  "highest_confirmed_country": "US",
+  "highest_death_rate_country": "Yemen",
+  "countries_in_dataset": 187
+}

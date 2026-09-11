@@ -1,0 +1,40 @@
+CREATE TABLE day_wise_clean (
+    Date DATE PRIMARY KEY,
+    Confirmed INTEGER NOT NULL,
+    Deaths INTEGER NOT NULL,
+    Recovered INTEGER NOT NULL,
+    Active INTEGER NOT NULL,
+    "New cases" INTEGER NOT NULL,
+    "New deaths" INTEGER NOT NULL,
+    "New recovered" INTEGER NOT NULL,
+    "Deaths / 100 Cases" NUMERIC,
+    "Recovered / 100 Cases" NUMERIC,
+    "Deaths / 100 Recovered" NUMERIC,
+    "No. of countries" INTEGER,
+    "Active Cases" INTEGER NOT NULL,
+    "Death Rate" NUMERIC,
+    "Recovery Rate" NUMERIC,
+    "Active Rate" NUMERIC
+);
+
+CREATE TABLE country_wise_clean (
+    "Country/Region" TEXT PRIMARY KEY,
+    Confirmed INTEGER NOT NULL,
+    Deaths INTEGER NOT NULL,
+    Recovered INTEGER NOT NULL,
+    Active INTEGER NOT NULL,
+    "New cases" INTEGER NOT NULL,
+    "New deaths" INTEGER NOT NULL,
+    "New recovered" INTEGER NOT NULL,
+    "Deaths / 100 Cases" NUMERIC,
+    "Recovered / 100 Cases" NUMERIC,
+    "Deaths / 100 Recovered" NUMERIC,
+    "Confirmed last week" INTEGER,
+    "1 week change" INTEGER,
+    "1 week % increase" NUMERIC,
+    "WHO Region" TEXT,
+    "Active Cases" INTEGER NOT NULL,
+    "Death Rate" NUMERIC,
+    "Recovery Rate" NUMERIC,
+    "Active Rate" NUMERIC
+);
