@@ -1,51 +1,106 @@
 # COVID-19 Analysis
 
-End-to-end COVID-19 data cleaning, exploratory analysis, visualization, and SQL practice project using the CSV files in `data/`.
+An end-to-end data analysis project covering COVID-19 data cleaning, validation, exploratory analysis, visualization, and SQL reporting.
 
-## Run the pipeline
+## Overview
+
+This project transforms raw COVID-19 CSV datasets into analysis-ready tables and decision-friendly outputs. The workflow focuses on global trends, country comparisons, regional summaries, case outcomes, and daily changes over time.
+
+## Analysis Workflow
+
+1. Read the daily and country-level source datasets.
+2. Normalize dates and numeric fields.
+3. Remove duplicate records and validate required fields.
+4. Create derived measures for active cases and outcome rates.
+5. Generate country, regional, and time-series analysis outputs.
+6. Export cleaned data, summary files, and charts.
+7. Run basic and advanced SQL queries against the cleaned tables.
+
+## Run the Analysis
+
+From the project root:
 
 ```powershell
 python src/covid_analysis.py
 ```
 
-The script reads `data/day_wise.csv` and `data/country_wise_latest.csv`, converts dates and numeric columns, removes duplicate rows, adds derived metrics, validates the result, and writes:
+The pipeline reads `data/day_wise.csv` and `data/country_wise_latest.csv` and writes refreshed outputs to `data/cleaned/` and `outputs/`.
 
-- `data/cleaned/day_wise_clean.csv`
-- `data/cleaned/country_wise_clean.csv`
-- `outputs/eda_summary.json`
-- `outputs/top_10_countries.csv`
-- `outputs/regional_summary.csv`
-- `outputs/figures/global_trend.png`
-- `outputs/figures/top_countries.png`
-- `outputs/figures/regional_cases.png`
+## Key Metrics
 
-Derived columns are `Active Cases`, `Death Rate`, `Recovery Rate`, and `Active Rate`. Rates are percentages and are protected against division by zero.
+- `Active Cases = Confirmed - Deaths - Recovered`
+- `Death Rate = Deaths / Confirmed * 100`
+- `Recovery Rate = Recovered / Confirmed * 100`
+- `Active Rate = Active Cases / Confirmed * 100`
 
-## Dataset checks
+Rates are calculated safely for zero-case records and rounded to two decimal places.
 
-The supplied primary files contain 188 daily records and 187 country records. The initial profile found no missing values or exact duplicate rows. The pipeline still performs duplicate removal and validation so the workflow remains useful if the source files change.
+## Project Structure
 
-Validation checks include required columns, valid dates, unique dates/countries, non-negative core counts, and the active-case formula:
+```text
+covid-19-analysis/
+|-- data/
+|   |-- cleaned/                 # Pipeline-generated analysis tables
+|   |-- day_wise.csv             # Global daily time series
+|   |-- country_wise_latest.csv  # Country-level latest snapshot
+|   `-- ...                      # Additional source datasets
+|-- outputs/
+|   |-- figures/                 # Generated charts
+|   |-- eda_summary.json         # Key analysis findings
+|   |-- regional_summary.csv     # WHO-region aggregation
+|   `-- top_10_countries.csv     # Highest confirmed case counts
+|-- sql/
+|   |-- schema.sql               # Cleaned-table definitions
+|   `-- analysis_queries.sql     # Basic and advanced SQL analysis
+|-- src/
+|   `-- covid_analysis.py        # Cleaning, EDA, visualization, validation
+`-- README.md
+```
 
-`Active Cases = Confirmed - Deaths - Recovered`
+## Generated Outputs
 
-## Verified insights from this dataset
+The pipeline produces:
 
-- Date coverage: `2020-01-22` to `2020-07-27`.
-- Latest snapshot contains `16,480,485` confirmed cases, `654,036` deaths, `9,468,087` recoveries, and `6,358,362` active cases.
-- The highest daily new-case value is `282,756` on `2020-07-23`.
-- The country with the highest confirmed count is `US`.
-- `Yemen` has the highest calculated death rate in the country snapshot; interpret rates alongside case volume because small denominators can produce extreme percentages.
+- Cleaned daily and country-level CSV files.
+- Global confirmed, death, recovery, and active-case trend chart.
+- Top 10 countries by confirmed cases chart.
+- WHO-region confirmed-case comparison chart.
+- Regional and top-country summary tables.
+- A JSON summary containing the main verified findings.
 
-## SQL analysis
+## Data Quality Validation
 
-`sql/schema.sql` defines SQLite-compatible tables for the cleaned files. Import the two cleaned CSVs into those tables, then run `sql/analysis_queries.sql`. The query file includes:
+The pipeline validates:
 
-- latest global snapshot and top-country queries
-- WHO-region aggregation
-- seven-day moving average
-- regional country ranking with window functions
-- above-average case burden versus below-average recovery rate
-- day-over-day confirmed-case change using `LAG`
+- Required columns and parseable dates.
+- Unique daily dates and country names.
+- Non-negative confirmed, death, and recovery counts.
+- Duplicate removal at the row and country levels.
+- Correct active-case calculations.
 
-The other source CSVs remain available for extensions such as county-level US analysis or grouped date-region analysis.
+The source profile contains 188 daily records and 187 countries, with no initial missing values or exact duplicate rows in the primary datasets.
+
+## Verified Findings
+
+- **Coverage:** January 22, 2020 to July 27, 2020.
+- **Latest snapshot:** 16,480,485 confirmed cases, 654,036 deaths, 9,468,087 recoveries, and 6,358,362 active cases.
+- **Peak daily increase:** 282,756 new cases on July 23, 2020.
+- **Highest confirmed count:** United States (`US`).
+- **Highest calculated death rate:** Yemen in the country snapshot. Small case counts can produce unusually high rates, so this metric should be interpreted with case volume.
+
+## SQL Analysis
+
+The SQL layer is designed for SQLite-compatible workflows. Use [sql/schema.sql](sql/schema.sql) to define tables for the cleaned files, then run [sql/analysis_queries.sql](sql/analysis_queries.sql).
+
+Included analyses cover:
+
+- Latest global snapshot and top countries.
+- WHO-region aggregation.
+- Seven-day moving average of new cases.
+- Country ranking within each WHO region.
+- High case burden versus below-average recovery rate.
+- Day-over-day confirmed-case change using `LAG`.
+
+## Source Data
+
+The repository also includes grouped, worldometer, and US county-level datasets for future extensions such as county comparisons, regional time series, and location-specific analysis.
