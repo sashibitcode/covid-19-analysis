@@ -124,34 +124,40 @@ streamlit run app.py
 
 ```mermaid
 flowchart TD
-    subgraph Data Sources [Data Layer]
-        D1["data/day_wise.csv<br/>(Global Daily Series)"]
-        D2["data/country_wise_latest.csv<br/>(Country Snapshot)"]
-        D3["data/worldometer_data.csv<br/>(Testing & Demographics)"]
-        D4["data/full_grouped.csv<br/>(35,000+ Country-Day Records)"]
+    subgraph S_Data ["1. Data Sources Layer"]
+        D1["day_wise.csv<br/>(Global Daily Series)"]
+        D2["country_wise_latest.csv<br/>(Country Snapshot)"]
+        D3["worldometer_data.csv<br/>(Testing & Demographics)"]
+        D4["full_grouped.csv<br/>(35,000+ Records)"]
     end
 
-    subgraph Processing Engine [Data Engineering & Analytics]
-        P1["src/covid_analysis.py<br/>Data Hygiene & Invariant Audits"]
-        P2["src/advanced_metrics.py<br/>Testing Tiers & 7-Day Wave Engine"]
-        P3["src/generate_visualizations.py<br/>160 DPI Publication Charts"]
+    subgraph S_Processing ["2. Data Engineering & Analytics"]
+        P1["covid_analysis.py<br/>(Cleaning & Invariants)"]
+        P2["advanced_metrics.py<br/>(7D Waves & Testing Tiers)"]
+        P3["generate_visualizations.py<br/>(160 DPI Publication Charts)"]
     end
 
-    subgraph Storage [Relational Storage & SQL Engine]
-        S1[("covid_analysis.db<br/>(SQLite Engine)")]
-        S2["sql/build_sqlite_db.py<br/>(Automated Ingestion Pipeline)"]
-        S3["sql/analysis_queries.sql<br/>(14 Production Queries)"]
+    subgraph S_Storage ["3. Relational Storage & SQL Engine"]
+        S1[("covid_analysis.db<br/>(SQLite Database)")]
+        S2["build_sqlite_db.py<br/>(Automated Ingestion Pipeline)"]
+        S3["analysis_queries.sql<br/>(14 Analytical Queries)"]
     end
 
-    subgraph Presentation [Consumption & BI Interfaces]
+    subgraph S_Presentation ["4. Dashboards & BI Interfaces"]
         UI1["app.py<br/>(Streamlit Interactive App)"]
-        UI2["powerbi/COVID_DAX_MEASURES.md<br/>(Power BI Star Schema & DAX)"]
-        UI3["docs/COVID19_EPIDEMIOLOGICAL_REPORT.md<br/>(Executive Research Report)"]
+        UI2["COVID_DAX_MEASURES.md<br/>(Power BI Star Schema & DAX)"]
+        UI3["COVID19_EPIDEMIOLOGICAL_REPORT.md<br/>(Executive Research Report)"]
     end
 
-    Data Sources --> Processing Engine
-    Processing Engine --> Storage
-    Storage --> Presentation
+    D1 & D2 --> P1
+    D3 & D4 --> P2
+    P1 & P2 --> P3
+    P1 & P2 --> S2
+    S2 --> S1
+    S1 --> S3
+    S1 --> UI1
+    S1 --> UI2
+    P2 --> UI3
 ```
 
 ---
