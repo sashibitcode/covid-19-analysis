@@ -1,106 +1,171 @@
-# COVID-19 Analysis
+# 🦠 COVID-19 Global Analytics & Epidemiological Intelligence Hub
 
-An end-to-end data analysis project covering COVID-19 data cleaning, validation, exploratory analysis, visualization, and SQL reporting.
+[![CI Build](https://github.com/sashibitcode/covid-19-analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/sashibitcode/covid-19-analysis/actions)
+![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12%20%7C%203.14-blue?logo=python)
+![Streamlit](https://img.shields.io/badge/Streamlit-1.30%2B-FF4B4B?logo=streamlit)
+![SQLite](https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
+![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-brightgreen.svg)
 
-## Overview
+An end-to-end, production-grade data analytics and epidemiological intelligence ecosystem covering COVID-19 data engineering, time-series moving averages, publication visual analytics, automated SQLite database pipelines, interactive Streamlit dashboards, and Power BI dimensional modeling.
 
-This project transforms raw COVID-19 CSV datasets into analysis-ready tables and decision-friendly outputs. The workflow focuses on global trends, country comparisons, regional summaries, case outcomes, and daily changes over time.
+---
 
-## Analysis Workflow
+## 🏛️ System Architecture
 
-1. Read the daily and country-level source datasets.
-2. Normalize dates and numeric fields.
-3. Remove duplicate records and validate required fields.
-4. Create derived measures for active cases and outcome rates.
-5. Generate country, regional, and time-series analysis outputs.
-6. Export cleaned data, summary files, and charts.
-7. Run basic and advanced SQL queries against the cleaned tables.
+```mermaid
+flowchart TD
+    subgraph Data Layer
+        D1[data/day_wise.csv]
+        D2[data/country_wise_latest.csv]
+        D3[data/worldometer_data.csv]
+        D4[data/full_grouped.csv]
+    end
 
-## Run the Analysis
+    subgraph Processing & Analytics
+        P1[src/covid_analysis.py<br/>Data Cleaning & Invariants]
+        P2[src/advanced_metrics.py<br/>Testing Tiers & Wave Peaks]
+        P3[src/generate_visualizations.py<br/>Publication Figures]
+    end
 
-From the project root:
+    subgraph Storage & SQL Engine
+        S1[(covid_analysis.db<br/>SQLite Engine)]
+        S2[sql/analysis_queries.sql<br/>14 Analytical Queries]
+        S3[sql/build_sqlite_db.py<br/>Automated Ingestion Pipeline]
+    end
 
-```powershell
-python src/covid_analysis.py
+    subgraph Presentation & BI
+        UI1[app.py<br/>Streamlit Multi-Tab Dashboard]
+        UI2[powerbi/COVID_DAX_MEASURES.md<br/>Power BI Star Schema & DAX]
+        UI3[docs/COVID19_EPIDEMIOLOGICAL_REPORT.md<br/>Executive Research Report]
+    end
+
+    Data Layer --> Processing & Analytics
+    Processing & Analytics --> Storage & SQL Engine
+    Storage & SQL Engine --> Presentation & BI
 ```
 
-The pipeline reads `data/day_wise.csv` and `data/country_wise_latest.csv` and writes refreshed outputs to `data/cleaned/` and `outputs/`.
+---
 
-## Key Metrics
-
-- `Active Cases = Confirmed - Deaths - Recovered`
-- `Death Rate = Deaths / Confirmed * 100`
-- `Recovery Rate = Recovered / Confirmed * 100`
-- `Active Rate = Active Cases / Confirmed * 100`
-
-Rates are calculated safely for zero-case records and rounded to two decimal places.
-
-## Project Structure
+## 📂 Project Structure
 
 ```text
 covid-19-analysis/
-|-- data/
-|   |-- cleaned/                 # Pipeline-generated analysis tables
-|   |-- day_wise.csv             # Global daily time series
-|   |-- country_wise_latest.csv  # Country-level latest snapshot
-|   `-- ...                      # Additional source datasets
-|-- outputs/
-|   |-- figures/                 # Generated charts
-|   |-- eda_summary.json         # Key analysis findings
-|   |-- regional_summary.csv     # WHO-region aggregation
-|   `-- top_10_countries.csv     # Highest confirmed case counts
-|-- sql/
-|   |-- schema.sql               # Cleaned-table definitions
-|   `-- analysis_queries.sql     # Basic and advanced SQL analysis
-|-- src/
-|   `-- covid_analysis.py        # Cleaning, EDA, visualization, validation
-`-- README.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml                     # Multi-Python GitHub Actions CI workflow
+├── data/
+│   ├── cleaned/                       # Pipeline-generated clean tables
+│   │   ├── day_wise_clean.csv
+│   │   └── country_wise_clean.csv
+│   ├── country_wise_latest.csv        # Cross-sectional latest country snapshot
+│   ├── day_wise.csv                   # Global daily longitudinal time-series
+│   ├── full_grouped.csv               # Country-level daily time-series (35k+ rows)
+│   └── worldometer_data.csv           # Diagnostic testing & demographic metrics
+├── docs/
+│   └── COVID19_EPIDEMIOLOGICAL_REPORT.md # In-depth research & findings report
+├── outputs/
+│   ├── figures/                       # Publication-quality charts (160 DPI)
+│   │   ├── active_vs_critical_ratio.png
+│   │   ├── case_fatality_quadrant.png
+│   │   ├── global_trend.png
+│   │   ├── regional_cases.png
+│   │   ├── testing_vs_cases_per_million.png
+│   │   ├── top_10_countries.png
+│   │   ├── top_countries_epic_trajectory.png
+│   │   └── who_region_mortality_breakdown.png
+│   ├── country_wave_peaks.csv         # 7-day MA wave peak records per nation
+│   ├── eda_summary.json               # Automated EDA verification metrics
+│   ├── regional_benchmarks.csv        # WHO regional summary metrics
+│   └── testing_vs_mortality.csv       # Testing tiers and CFR correlation
+├── powerbi/
+│   └── COVID_DAX_MEASURES.md          # Power BI star schema & 15+ DAX formulas
+├── sql/
+│   ├── analysis_queries.sql           # 14 Advanced SQL analytical queries
+│   ├── build_sqlite_db.py             # Automated SQLite database builder & validator
+│   └── schema.sql                     # Table schemas with data types & constraints
+├── src/
+│   ├── advanced_metrics.py            # Epidemiological metrics & multi-source engine
+│   ├── covid_analysis.py              # Core data cleaning, normalization & validation
+│   └── generate_visualizations.py     # High-resolution Seaborn & Matplotlib visualizer
+├── tests/
+│   └── test_covid_analysis.py         # Automated unit test suite (100% passing)
+├── app.py                             # Interactive Streamlit Web Application
+├── requirements.txt                   # Pinned production dependencies
+└── README.md                          # Repository documentation
 ```
 
-## Generated Outputs
+---
 
-The pipeline produces:
+## 🚀 Quickstart & Execution Guide
 
-- Cleaned daily and country-level CSV files.
-- Global confirmed, death, recovery, and active-case trend chart.
-- Top 10 countries by confirmed cases chart.
-- WHO-region confirmed-case comparison chart.
-- Regional and top-country summary tables.
-- A JSON summary containing the main verified findings.
+### 1. Environment Setup
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
 
-## Data Quality Validation
+### 2. Run Data Processing & Analysis Pipelines
+```powershell
+# Run core cleaning and invariant checks
+python src/covid_analysis.py
 
-The pipeline validates:
+# Run advanced epidemiological metrics engine
+python src/advanced_metrics.py
 
-- Required columns and parseable dates.
-- Unique daily dates and country names.
-- Non-negative confirmed, death, and recovery counts.
-- Duplicate removal at the row and country levels.
-- Correct active-case calculations.
+# Generate publication-quality figures
+python src/generate_visualizations.py
+```
 
-The source profile contains 188 daily records and 187 countries, with no initial missing values or exact duplicate rows in the primary datasets.
+### 3. Build SQLite Database & Run 14 Analytical SQL Queries
+```powershell
+python sql/build_sqlite_db.py
+```
 
-## Verified Findings
+### 4. Launch Interactive Streamlit Web Dashboard
+```powershell
+streamlit run app.py
+```
+> The dashboard will automatically launch at `http://localhost:8501` featuring 5 interactive tabs: Global Pulse, Country Waves, Testing Severity, WHO Regional Analysis, and the Live SQL Console.
 
-- **Coverage:** January 22, 2020 to July 27, 2020.
-- **Latest snapshot:** 16,480,485 confirmed cases, 654,036 deaths, 9,468,087 recoveries, and 6,358,362 active cases.
-- **Peak daily increase:** 282,756 new cases on July 23, 2020.
-- **Highest confirmed count:** United States (`US`).
-- **Highest calculated death rate:** Yemen in the country snapshot. Small case counts can produce unusually high rates, so this metric should be interpreted with case volume.
+### 5. Run Automated Unit Test Suite
+```powershell
+python -m unittest discover tests -v
+```
 
-## SQL Analysis
+---
 
-The SQL layer is designed for SQLite-compatible workflows. Use [sql/schema.sql](sql/schema.sql) to define tables for the cleaned files, then run [sql/analysis_queries.sql](sql/analysis_queries.sql).
+## 📊 Key Epidemiological Metrics & Findings
 
-Included analyses cover:
+| Metric | Verified Value | Epidemiological Context |
+|---|---|---|
+| **Coverage Period** | Jan 22 – Jul 27, 2020 | Primary first-wave pandemic escalation |
+| **Total Global Infections** | **19,169,166** | Combined across 209 countries & territories |
+| **Total Fatalities** | **713,007** | Global crude Case Fatality Rate: **3.72%** |
+| **Total Recoveries** | **12,274,321** | Global recovery rate: **64.03%** |
+| **Peak Single-Day Spike** | **282,756 cases** | July 23, 2020 |
+| **Diagnostic Tests Logged** | **267,859,298** | High-testing tier countries exhibited 60% lower crude CFR |
+| **Dominant Epicenter** | Americas (USA & Brazil) | Accounted for > 46% of total global cases |
 
-- Latest global snapshot and top countries.
-- WHO-region aggregation.
-- Seven-day moving average of new cases.
-- Country ranking within each WHO region.
-- High case burden versus below-average recovery rate.
-- Day-over-day confirmed-case change using `LAG`.
+---
 
-## Source Data
+## 🧪 SQL Analytics & Ingestion
+The repository provides an automated SQLite ingestion pipeline ([`sql/build_sqlite_db.py`](sql/build_sqlite_db.py)) and 14 production queries ([`sql/analysis_queries.sql`](sql/analysis_queries.sql)):
+- **Query 1-3**: Global totals, Top 10 countries, WHO regional breakdown.
+- **Query 4**: 7-day moving average of global daily cases using Window Functions.
+- **Query 5-7**: Dense regional rankings, low-recovery burden detection, and LAG day-over-day changes.
+- **Query 8-10**: CFR risk categorizations, 14-day rolling death averages, and Week-over-Week (WoW) growth rates.
+- **Query 11-14**: Top active-case concentrations per region, recovery efficiency benchmarks, and single-day peak rankings.
 
-The repository also includes grouped, worldometer, and US county-level datasets for future extensions such as county comparisons, regional time series, and location-specific analysis.
+---
+
+## 📈 Power BI & Dimensional Modeling
+The [`powerbi/COVID_DAX_MEASURES.md`](powerbi/COVID_DAX_MEASURES.md) guide specifies:
+- Star schema architecture linking Fact tables with Date, Country, and WHO Region dimensions.
+- 15+ production DAX formulas including `Total Confirmed`, `Active Cases`, `Case Fatality Rate %`, `New Cases 7D MA`, and `WoW Confirmed Growth %`.
+
+---
+
+## 🛡️ License
+This project is open-source and available under the [MIT License](LICENSE).
