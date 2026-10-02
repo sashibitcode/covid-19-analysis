@@ -1,6 +1,6 @@
 # Global COVID-19 Epidemiological Research & Analytics Report
 
-**Author**: Shashi Shekhar  
+**Author**: Shashikant raj  
 **Repository**: [sashibitcode/covid-19-analysis](https://github.com/sashibitcode/covid-19-analysis)  
 **Data Scope**: January 22, 2020 – July 27, 2020  
 **Entities Analyzed**: 209 Countries and Territories across 6 WHO Regions  

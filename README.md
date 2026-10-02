@@ -360,7 +360,7 @@ OK (100% Pass Rate)
 
 ## 👤 Author & Connect
 
-**Shashi Shekhar**  
+**Shashikant raj**  
 - **GitHub**: [@sashibitcode](https://github.com/sashibitcode)  
 - **Repository**: [covid-19-analysis](https://github.com/sashibitcode/covid-19-analysis)
 
