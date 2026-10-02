@@ -1,0 +1,146 @@
+Country/Region,Continent,WHO Region,Population,TotalCases,TotalDeaths,TotalRecovered,ActiveCases,Tot Cases/1M pop,Deaths/1M pop,Tests/1M pop,Case_Fatality_Rate,Recovery_Rate,Critical_Patient_Ratio,Tests_Per_Case,Testing_Tier
+USA,North America,Americas,331198130.0,5032179,162804.0,2576668.0,2292707.0,15194.0,492.0,190640.0,3.24,51.2,0.8,12.5,Very High Testing
+Brazil,South America,Americas,212710692.0,2917562,98644.0,2047660.0,771258.0,13716.0,464.0,62085.0,3.38,70.18,1.08,4.5,High Testing
+India,Asia,South-EastAsia,1381344997.0,2025409,41638.0,1377384.0,606387.0,1466.0,30.0,16035.0,2.06,68.01,1.47,10.9,Moderate Testing
+Russia,Europe,Europe,145940924.0,871894,14606.0,676357.0,180931.0,5974.0,100.0,203623.0,1.68,77.57,1.27,34.1,Very High Testing
+South Africa,Africa,Africa,59381566.0,538184,9604.0,387316.0,141264.0,9063.0,162.0,53044.0,1.78,71.97,0.38,5.9,High Testing
+Mexico,North America,Americas,129066160.0,462690,50517.0,308848.0,103325.0,3585.0,391.0,8189.0,10.92,66.75,3.86,2.3,Moderate Testing
+Peru,South America,Americas,33016319.0,455409,20424.0,310337.0,124648.0,13793.0,619.0,75521.0,4.48,68.14,1.14,5.5,High Testing
+Chile,South America,Americas,19132514.0,366671,9889.0,340168.0,16614.0,19165.0,517.0,92022.0,2.7,92.77,8.17,4.8,Very High Testing
+Colombia,South America,Americas,50936262.0,357710,11939.0,192355.0,153416.0,7023.0,234.0,35374.0,3.34,53.77,0.97,5.0,Moderate Testing
+Spain,Europe,Europe,46756648.0,354530,28500.0,0.0,0.0,7582.0,610.0,151087.0,8.04,0.0,0.0,19.9,Very High Testing
+Iran,Asia,EasternMediterranean,84097623.0,320117,17976.0,277463.0,24678.0,3806.0,214.0,31068.0,5.62,86.68,16.84,8.2,Moderate Testing
+UK,Europe,Europe,67922029.0,308134,46413.0,0.0,0.0,4537.0,683.0,257873.0,15.06,0.0,0.0,56.8,Very High Testing
+Saudi Arabia,Asia,EasternMediterranean,34865919.0,284226,3055.0,247089.0,34082.0,8152.0,88.0,104277.0,1.07,86.93,5.62,12.8,Very High Testing
+Pakistan,Asia,EasternMediterranean,221295851.0,281863,6035.0,256058.0,19770.0,1274.0,27.0,9304.0,2.14,90.84,4.09,7.3,Moderate Testing
+Bangladesh,Asia,South-EastAsia,164851401.0,249651,3306.0,143824.0,102521.0,1514.0,20.0,7432.0,1.32,57.61,0.0,4.9,Low Testing
+Italy,Europe,Europe,60452568.0,249204,35187.0,201323.0,12694.0,4122.0,582.0,117443.0,14.12,80.79,0.33,28.5,Very High Testing
+Turkey,Asia,Europe,84428331.0,237265,5798.0,220546.0,10921.0,2810.0,69.0,60191.0,2.44,92.95,5.31,21.4,High Testing
+Argentina,South America,Americas,45236884.0,228195,4251.0,99852.0,124092.0,5044.0,94.0,17564.0,1.86,43.76,0.93,3.5,Moderate Testing
+Germany,Europe,Europe,83811260.0,215210,9252.0,196200.0,9758.0,2568.0,110.0,102452.0,4.3,91.17,2.42,39.9,Very High Testing
+France,Europe,Europe,65288306.0,195633,30312.0,82460.0,82861.0,2996.0,464.0,61147.0,15.49,42.15,0.46,20.4,High Testing
+Iraq,Asia,EasternMediterranean,40306025.0,140603,5161.0,101025.0,34417.0,3488.0,128.0,27111.0,3.67,71.85,1.5,7.8,Moderate Testing
+Philippines,Asia,WesternPacific,109722719.0,119460,2150.0,66837.0,50473.0,1089.0,20.0,15220.0,1.8,55.95,0.47,14.0,Moderate Testing
+Indonesia,Asia,South-EastAsia,273808365.0,118753,5521.0,75645.0,37587.0,434.0,20.0,5965.0,4.65,63.7,0.0,13.8,Low Testing
+Canada,North America,Americas,37775022.0,118561,8966.0,103106.0,6489.0,3139.0,237.0,114339.0,7.56,86.96,34.87,36.4,Very High Testing
+Qatar,Asia,EasternMediterranean,2807805.0,112092,178.0,108831.0,3083.0,39922.0,63.0,181993.0,0.16,97.09,2.5,4.6,Very High Testing
+Kazakhstan,Asia,Europe,18798667.0,95942,1058.0,68871.0,26013.0,5104.0,56.0,115099.0,1.1,71.78,0.85,22.6,Very High Testing
+Egypt,Africa,EasternMediterranean,102516525.0,95006,4951.0,48898.0,41157.0,927.0,48.0,1317.0,5.21,51.47,0.1,1.4,Low Testing
+Ecuador,South America,Americas,17668824.0,90537,5877.0,71318.0,13342.0,5124.0,333.0,14635.0,6.49,78.77,2.83,2.9,Moderate Testing
+Bolivia,South America,Americas,11688459.0,86423,3465.0,27373.0,55585.0,7394.0,296.0,15706.0,4.01,31.67,0.13,2.1,Moderate Testing
+Sweden,Europe,Europe,10105596.0,81967,5766.0,0.0,0.0,8111.0,571.0,85429.0,7.03,0.0,0.0,10.5,High Testing
+Oman,Asia,EasternMediterranean,5118446.0,80713,492.0,70910.0,9311.0,15769.0,96.0,60411.0,0.61,87.85,1.9,3.8,High Testing
+Israel,Asia,Europe,9197590.0,79559,576.0,53427.0,25556.0,8650.0,63.0,203581.0,0.72,67.15,1.4,23.5,Very High Testing
+Ukraine,Europe,Europe,43705858.0,76808,1819.0,42524.0,32465.0,1757.0,42.0,25549.0,2.37,55.36,0.49,14.5,Moderate Testing
+Dominican Republic,North America,Americas,10858648.0,76536,1246.0,40539.0,34751.0,7048.0,115.0,25963.0,1.63,52.97,0.91,3.7,Moderate Testing
+Panama,North America,Americas,4321282.0,71418,1574.0,45658.0,24186.0,16527.0,364.0,55769.0,2.2,63.93,0.67,3.4,High Testing
+Belgium,Europe,Europe,11594739.0,71158,9859.0,17661.0,43638.0,6137.0,850.0,152407.0,13.86,24.82,0.14,24.8,Very High Testing
+Kuwait,Asia,EasternMediterranean,4276658.0,70045,469.0,61610.0,7966.0,16378.0,110.0,122105.0,0.67,87.96,1.59,7.5,Very High Testing
+Belarus,Europe,Europe,9449001.0,68503,580.0,63756.0,4167.0,7250.0,61.0,142269.0,0.85,93.07,0.0,19.6,Very High Testing
+UAE,Asia,EasternMediterranean,9902079.0,61845,354.0,55739.0,5752.0,6246.0,36.0,531470.0,0.57,90.13,0.0,85.1,Very High Testing
+Romania,Europe,Europe,19224023.0,57895,2566.0,28992.0,26337.0,3012.0,133.0,68631.0,4.43,50.08,1.74,22.8,High Testing
+Netherlands,Europe,Europe,17138756.0,56982,6153.0,0.0,0.0,3325.0,359.0,63007.0,10.8,0.0,0.0,19.0,High Testing
+Singapore,Asia,WesternPacific,5854932.0,54555,27.0,48031.0,6497.0,9318.0,5.0,251817.0,0.05,88.04,0.0,27.0,Very High Testing
+Guatemala,North America,Americas,17946899.0,54339,2119.0,42070.0,10150.0,3028.0,118.0,9624.0,3.9,77.42,0.05,3.2,Moderate Testing
+Portugal,Europe,Europe,10193593.0,52061,1743.0,37840.0,12478.0,5107.0,171.0,167308.0,3.35,72.68,0.34,32.8,Very High Testing
+Poland,Europe,Europe,37842302.0,49515,1774.0,35642.0,12099.0,1308.0,47.0,62752.0,3.58,71.98,0.6,48.0,High Testing
+Nigeria,Africa,Africa,206606300.0,45244,930.0,32430.0,11884.0,219.0,5.0,1485.0,2.06,71.68,0.06,6.8,Low Testing
+Honduras,North America,Americas,9919704.0,45098,1423.0,6116.0,37559.0,4546.0,143.0,11018.0,3.16,13.56,0.14,2.4,Moderate Testing
+Bahrain,Asia,EasternMediterranean,1706669.0,42889,156.0,39945.0,2788.0,25130.0,91.0,513691.0,0.36,93.14,1.47,20.4,Very High Testing
+Japan,Asia,WesternPacific,126435859.0,42263,1026.0,28877.0,12360.0,334.0,8.0,7425.0,2.43,68.33,0.93,22.2,Low Testing
+Armenia,Asia,Europe,2963811.0,39819,772.0,31556.0,7491.0,13435.0,260.0,57898.0,1.94,79.25,0.0,4.3,High Testing
+Ghana,Africa,Africa,31133483.0,39642,199.0,36384.0,3059.0,1273.0,6.0,13035.0,0.5,91.78,0.23,10.2,Moderate Testing
+Kyrgyzstan,Asia,Europe,6534479.0,38659,1447.0,30099.0,7113.0,5916.0,221.0,40970.0,3.74,77.86,0.34,6.9,High Testing
+Afghanistan,Asia,EasternMediterranean,39009447.0,36896,1298.0,25840.0,9758.0,946.0,33.0,2317.0,3.52,70.03,0.32,2.5,Low Testing
+Switzerland,Europe,Europe,8660952.0,36108,1985.0,31600.0,2523.0,4169.0,229.0,94997.0,5.5,87.52,0.91,22.8,Very High Testing
+Algeria,Africa,Africa,43926079.0,33626,1273.0,23238.0,9115.0,766.0,29.0,0.0,3.79,69.11,0.63,0.0,Low Testing
+Azerbaijan,Asia,Europe,10148243.0,33247,479.0,29275.0,3493.0,3276.0,47.0,75499.0,1.44,88.05,1.89,23.0,High Testing
+Morocco,Africa,EasternMediterranean,36953359.0,29644,449.0,20553.0,8642.0,802.0,12.0,37448.0,1.51,69.33,0.36,46.7,High Testing
+Uzbekistan,Asia,Europe,33516027.0,28315,175.0,19291.0,8849.0,845.0,5.0,41112.0,0.62,68.13,2.58,48.7,High Testing
+Serbia,Europe,Europe,8733665.0,27332,621.0,14047.0,12664.0,3129.0,71.0,82799.0,2.27,51.39,0.95,26.5,High Testing
+Moldova,Europe,Europe,4032983.0,26628,828.0,18676.0,7124.0,6603.0,205.0,31757.0,3.11,70.14,5.08,4.8,Moderate Testing
+Ireland,Europe,Europe,4943200.0,26372,1768.0,23364.0,1240.0,5335.0,358.0,132084.0,6.7,88.59,0.4,24.8,Very High Testing
+Kenya,Africa,Africa,53881160.0,24411,399.0,10444.0,13568.0,453.0,7.0,6223.0,1.63,42.78,0.32,13.7,Low Testing
+Venezuela,South America,Americas,28427499.0,22299,195.0,12146.0,9958.0,784.0,7.0,55138.0,0.87,54.47,0.42,70.3,High Testing
+Nepal,Asia,South-EastAsia,29186486.0,21750,65.0,15389.0,6296.0,745.0,2.0,25079.0,0.3,70.75,0.0,33.7,Moderate Testing
+Austria,Europe,Europe,9011577.0,21696,719.0,19596.0,1381.0,2408.0,80.0,104008.0,3.31,90.32,1.81,43.2,Very High Testing
+Costa Rica,North America,Americas,5098730.0,21070,200.0,7038.0,13832.0,4132.0,39.0,18850.0,0.95,33.4,0.74,4.6,Moderate Testing
+Ethiopia,Africa,Africa,115223736.0,20900,365.0,9027.0,11508.0,181.0,3.0,4069.0,1.75,43.19,1.61,22.4,Low Testing
+Australia,Australia/Oceania,WesternPacific,25528864.0,19890,255.0,10941.0,8694.0,779.0,10.0,181419.0,1.28,55.01,0.6,232.9,Very High Testing
+El Salvador,North America,Americas,6489514.0,19126,513.0,9236.0,9377.0,2947.0,79.0,38720.0,2.68,48.29,5.43,13.1,High Testing
+Czechia,Europe,Europe,10711019.0,17731,390.0,12320.0,5021.0,1655.0,36.0,68030.0,2.2,69.48,0.34,41.1,High Testing
+Cameroon,Africa,Africa,26606188.0,17718,391.0,15320.0,2007.0,666.0,15.0,5600.0,2.21,86.47,1.49,8.4,Low Testing
+Ivory Coast,Africa,Africa,26437950.0,16447,103.0,12484.0,3860.0,622.0,4.0,3956.0,0.63,75.9,0.0,6.4,Low Testing
+S. Korea,Asia,WesternPacific,51273732.0,14519,303.0,13543.0,673.0,283.0,6.0,31471.0,2.09,93.28,2.67,111.1,Moderate Testing
+Denmark,Europe,Europe,5794279.0,14306,617.0,12787.0,902.0,2469.0,106.0,285542.0,4.31,89.38,0.22,115.7,Very High Testing
+Palestine,Asia,EasternMediterranean,5112340.0,13398,92.0,6907.0,6399.0,2621.0,18.0,39176.0,0.69,51.55,0.0,14.9,High Testing
+Bosnia and Herzegovina,Europe,Europe,3278650.0,13396,384.0,7042.0,5970.0,4086.0,117.0,44842.0,2.87,52.57,0.0,11.0,High Testing
+Bulgaria,Europe,Europe,6942854.0,13014,435.0,7374.0,5205.0,1874.0,63.0,42358.0,3.34,56.66,0.9,22.6,High Testing
+Madagascar,Africa,Africa,27755708.0,12526,134.0,10148.0,2244.0,451.0,5.0,1668.0,1.07,81.02,3.92,3.7,Low Testing
+Sudan,Africa,EasternMediterranean,43943536.0,11780,763.0,6194.0,4823.0,268.0,17.0,9.0,6.48,52.58,0.0,0.0,Low Testing
+North Macedonia,Europe,Europe,2083365.0,11399,517.0,7480.0,3402.0,5471.0,248.0,52773.0,4.54,65.62,0.09,9.6,High Testing
+Senegal,Africa,Africa,16783877.0,10715,223.0,7101.0,3391.0,638.0,13.0,6838.0,2.08,66.27,0.97,10.7,Low Testing
+Norway,Europe,Europe,5425471.0,9468,256.0,8857.0,355.0,1745.0,47.0,87152.0,2.7,93.55,0.85,49.9,Very High Testing
+DRC,Africa,Africa,89802183.0,9309,215.0,8048.0,1046.0,104.0,2.0,0.0,2.31,86.45,0.0,0.0,Low Testing
+Malaysia,Asia,WesternPacific,32406372.0,9038,125.0,8713.0,200.0,279.0,4.0,30591.0,1.38,96.4,1.0,109.7,Moderate Testing
+French Guiana,South America,,299385.0,8127,47.0,7240.0,840.0,27146.0,157.0,138324.0,0.58,89.09,2.74,5.1,Very High Testing
+Gabon,Africa,Africa,2230563.0,7787,51.0,5609.0,2127.0,3491.0,23.0,38272.0,0.65,72.03,0.52,11.0,High Testing
+Tajikistan,Asia,Europe,9557468.0,7665,62.0,6443.0,1160.0,802.0,6.0,0.0,0.81,84.06,0.0,0.0,Low Testing
+Guinea,Africa,Africa,13164905.0,7664,49.0,6757.0,858.0,582.0,4.0,1094.0,0.64,88.17,2.8,1.9,Low Testing
+Haiti,North America,Americas,11416103.0,7544,171.0,4832.0,2541.0,661.0,15.0,1616.0,2.27,64.05,0.0,2.4,Low Testing
+Finland,Europe,Europe,5541604.0,7532,331.0,6980.0,221.0,1359.0,60.0,70287.0,4.39,92.67,0.0,51.7,High Testing
+Zambia,Africa,Africa,18430129.0,7164,199.0,5786.0,1179.0,389.0,11.0,4900.0,2.78,80.76,0.0,12.6,Low Testing
+Luxembourg,Europe,Europe,626952.0,7073,119.0,5750.0,1204.0,11282.0,190.0,995282.0,1.68,81.3,0.75,88.2,Very High Testing
+Mauritania,Africa,Africa,4660728.0,6444,157.0,5291.0,996.0,1383.0,34.0,12313.0,2.44,82.11,0.3,8.9,Moderate Testing
+Paraguay,South America,Americas,7141091.0,6375,66.0,4974.0,1335.0,893.0,9.0,18943.0,1.04,78.02,1.72,21.2,Moderate Testing
+Albania,Europe,Europe,2877470.0,6016,188.0,3155.0,2673.0,2091.0,65.0,13553.0,3.12,52.44,0.86,6.5,Moderate Testing
+Lebanon,Asia,EasternMediterranean,6822220.0,5672,70.0,1974.0,3628.0,831.0,10.0,50609.0,1.23,34.8,1.27,60.9,High Testing
+Croatia,Europe,Europe,4102577.0,5404,155.0,4688.0,561.0,1317.0,38.0,30546.0,2.87,86.75,1.25,23.2,Moderate Testing
+Djibouti,Africa,EasternMediterranean,989387.0,5330,59.0,5057.0,214.0,5387.0,60.0,60552.0,1.11,94.88,0.0,11.2,High Testing
+Greece,Europe,Europe,10417673.0,5123,210.0,1374.0,3539.0,492.0,20.0,59456.0,4.1,26.82,0.4,120.9,High Testing
+Libya,Africa,EasternMediterranean,6880353.0,4879,107.0,652.0,4120.0,709.0,16.0,8677.0,2.19,13.36,0.0,12.2,Moderate Testing
+Equatorial Guinea,Africa,Africa,1407001.0,4821,83.0,2182.0,2556.0,3426.0,59.0,31525.0,1.72,45.26,0.0,9.2,Moderate Testing
+Maldives,Asia,South-EastAsia,541448.0,4680,19.0,2725.0,1936.0,8643.0,35.0,158071.0,0.41,58.23,0.62,18.3,Very High Testing
+CAR,Africa,,4837752.0,4620,59.0,1641.0,2920.0,955.0,12.0,6116.0,1.28,35.52,0.07,6.4,Low Testing
+Hungary,Europe,Europe,9657785.0,4597,600.0,3463.0,534.0,476.0,62.0,36504.0,13.05,75.33,1.5,76.7,Moderate Testing
+Malawi,Africa,Africa,19174839.0,4491,137.0,2137.0,2217.0,234.0,7.0,1745.0,3.05,47.58,0.18,7.5,Low Testing
+Zimbabwe,Africa,Africa,14883803.0,4339,84.0,1264.0,2991.0,292.0,6.0,9434.0,1.94,29.13,0.0,32.4,Moderate Testing
+Nicaragua,North America,Americas,6632263.0,3902,123.0,2913.0,866.0,588.0,19.0,0.0,3.15,74.65,0.0,0.0,Low Testing
+Hong Kong,Asia,WesternPacific,7503041.0,3850,46.0,2458.0,1346.0,513.0,6.0,92287.0,1.19,63.84,2.9,179.9,Very High Testing
+Congo,Africa,Africa,5530506.0,3546,58.0,1589.0,1899.0,641.0,10.0,0.0,1.64,44.81,0.0,0.0,Low Testing
+Montenegro,Europe,Europe,628074.0,3480,60.0,2178.0,1242.0,5541.0,96.0,61182.0,1.72,62.59,0.0,11.0,High Testing
+Thailand,Asia,South-EastAsia,69817894.0,3330,58.0,3148.0,124.0,48.0,0.8,10731.0,1.74,94.53,0.81,225.0,Moderate Testing
+Somalia,Africa,EasternMediterranean,15933012.0,3227,93.0,1728.0,1406.0,203.0,6.0,0.0,2.88,53.55,0.14,0.0,Low Testing
+Mayotte,Africa,,273419.0,3042,39.0,2738.0,265.0,11126.0,143.0,47546.0,1.28,90.01,0.75,4.3,High Testing
+Eswatini,Africa,Africa,1161348.0,2968,55.0,1476.0,1437.0,2556.0,47.0,17896.0,1.85,49.73,0.35,7.0,Moderate Testing
+Sri Lanka,Asia,South-EastAsia,21422362.0,2839,11.0,2541.0,287.0,133.0,0.5,7783.0,0.39,89.5,0.35,58.7,Moderate Testing
+Cuba,North America,Americas,11325899.0,2775,88.0,2409.0,278.0,245.0,8.0,25205.0,3.17,86.81,1.44,102.9,Moderate Testing
+Cabo Verde,Africa,Africa,556581.0,2734,27.0,2010.0,697.0,4912.0,49.0,110735.0,0.99,73.52,0.0,22.5,Very High Testing
+Namibia,Africa,Africa,2545264.0,2652,15.0,563.0,2074.0,1042.0,6.0,11485.0,0.57,21.23,1.16,11.0,Moderate Testing
+Mali,Africa,Africa,20302901.0,2552,124.0,1954.0,474.0,126.0,6.0,1239.0,4.86,76.57,0.0,9.9,Low Testing
+Slovakia,Europe,Europe,5459915.0,2480,29.0,1824.0,627.0,454.0,5.0,49877.0,1.17,73.55,0.32,109.8,High Testing
+South Sudan,Africa,Africa,11206572.0,2450,47.0,1175.0,1228.0,219.0,4.0,1075.0,1.92,47.96,0.0,4.9,Low Testing
+Slovenia,Europe,Europe,2078968.0,2223,125.0,1909.0,189.0,1069.0,60.0,65274.0,5.62,85.87,1.06,61.0,High Testing
+Lithuania,Europe,Europe,2718121.0,2171,81.0,1656.0,434.0,799.0,30.0,198955.0,3.73,76.28,1.38,249.1,Very High Testing
+Estonia,Europe,Europe,1326627.0,2124,63.0,1954.0,107.0,1601.0,47.0,92626.0,2.97,92.0,0.0,57.9,Very High Testing
+Mozambique,Africa,Africa,31333962.0,2120,15.0,795.0,1310.0,68.0,0.5,2079.0,0.71,37.5,0.0,30.7,Low Testing
+Rwanda,Africa,Africa,12981546.0,2111,5.0,1258.0,848.0,163.0,0.4,22051.0,0.24,59.59,0.0,135.6,Moderate Testing
+Suriname,South America,Americas,587154.0,2096,29.0,1446.0,621.0,3570.0,49.0,4743.0,1.38,68.99,1.45,1.3,Low Testing
+Guinea-Bissau,Africa,Africa,1972277.0,2032,27.0,944.0,1061.0,1030.0,14.0,761.0,1.33,46.46,0.47,0.7,Low Testing
+Benin,Africa,Africa,12151976.0,1936,38.0,1600.0,298.0,159.0,3.0,7709.0,1.96,82.64,0.34,48.4,Moderate Testing
+Iceland,Europe,Europe,341465.0,1930,10.0,1825.0,95.0,5652.0,29.0,438385.0,0.52,94.56,0.0,77.6,Very High Testing
+Sierra Leone,Africa,Africa,7992169.0,1877,67.0,1427.0,383.0,235.0,8.0,0.0,3.57,76.03,0.0,0.0,Low Testing
+Yemen,Asia,EasternMediterranean,29886897.0,1768,508.0,898.0,362.0,59.0,17.0,4.0,28.73,50.79,0.0,0.1,Low Testing
+Tunisia,Africa,EasternMediterranean,11830801.0,1642,51.0,1241.0,350.0,139.0,4.0,8478.0,3.11,75.58,2.57,61.1,Moderate Testing
+New Zealand,Australia/Oceania,WesternPacific,5002100.0,1569,22.0,1524.0,23.0,314.0,4.0,97348.0,1.4,97.13,0.0,310.4,Very High Testing
+Angola,Africa,Africa,32956300.0,1483,64.0,520.0,899.0,45.0,2.0,1965.0,4.32,35.06,2.22,43.7,Low Testing
+Uruguay,South America,Americas,3474956.0,1318,37.0,1079.0,202.0,379.0,11.0,36535.0,2.81,81.87,0.99,96.3,High Testing
+Latvia,Europe,Europe,1883936.0,1275,32.0,1070.0,173.0,677.0,17.0,110359.0,2.51,83.92,0.0,163.1,Very High Testing
+Jordan,Asia,EasternMediterranean,10213138.0,1232,11.0,1171.0,50.0,121.0,1.0,61562.0,0.89,95.05,6.0,510.3,High Testing
+Liberia,Africa,Africa,5068618.0,1224,78.0,705.0,441.0,241.0,15.0,0.0,6.37,57.6,0.0,0.0,Low Testing
+Uganda,Africa,Africa,45867852.0,1223,5.0,1102.0,116.0,27.0,0.1,6287.0,0.41,90.11,0.0,235.8,Low Testing
+Cyprus,Asia,Europe,1208238.0,1208,19.0,856.0,333.0,1000.0,16.0,179267.0,1.57,70.86,0.0,179.3,Very High Testing
+Georgia,Asia,Europe,3988368.0,1206,17.0,987.0,202.0,302.0,4.0,60294.0,1.41,81.84,0.0,199.4,High Testing
+Burkina Faso,Africa,Africa,20954852.0,1158,54.0,961.0,143.0,55.0,3.0,0.0,4.66,82.99,0.0,0.0,Low Testing
+Niger,Africa,Africa,24281433.0,1153,69.0,1057.0,27.0,47.0,3.0,373.0,5.98,91.67,0.0,7.9,Low Testing
+Togo,Africa,Africa,8296582.0,1012,22.0,697.0,293.0,122.0,3.0,5516.0,2.17,68.87,0.68,45.2,Low Testing
